@@ -18,10 +18,8 @@ func main() {
 	app.Version = "0.1"
 	app.Action = func(c *cli.Context) {
 
-		var (
-			numberOfSpins int
-			err           error
-		)
+		var err error
+		numberOfSpins := 1
 
 		if len(c.Args()) > 0 {
 			numberOfSpins, err = strconv.Atoi(c.Args()[0])
@@ -29,7 +27,7 @@ func main() {
 
 		if err != nil {
 			println("Invalid value for arguments")
-		} else if err == nil && numberOfSpins > 0 {
+		} else {
 			for i := 0; i < numberOfSpins; i++ {
 				println(spinSlots())
 			}
