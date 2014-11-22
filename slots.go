@@ -3,6 +3,7 @@ package main
 import (
 	"math/rand"
 	"os"
+	"strconv"
 	"strings"
 	"time"
 
@@ -16,7 +17,23 @@ func main() {
 	app.Usage = "Spin the slots"
 	app.Version = "0.1"
 	app.Action = func(c *cli.Context) {
-		println(spinSlots())
+
+		var (
+			numberOfSpins int
+			err           error
+		)
+
+		if len(c.Args()) > 0 {
+			numberOfSpins, err = strconv.Atoi(c.Args()[0])
+		}
+
+		if err != nil {
+			println("Invalid value for arguments")
+		} else if err == nil && numberOfSpins > 0 {
+			for i := 0; i < numberOfSpins; i++ {
+				println(spinSlots())
+			}
+		}
 	}
 
 	app.Run(os.Args)
@@ -24,14 +41,16 @@ func main() {
 
 func spinSlots() string {
 
-	symbols := [4]string{"\u2660", "\u2663", "\u2665", "\u2666"}
+	symbols := []string{"\u2660", "\u2663", "\u2665", "\u2666"}
 
 	rand.Seed(time.Now().UTC().UnixNano())
 
-	first := rand.Intn(4)
-	second := rand.Intn(4)
-	third := rand.Intn(4)
-	fourth := rand.Intn(4)
+	len := len(symbols)
+
+	first := rand.Intn(len)
+	second := rand.Intn(len)
+	third := rand.Intn(len)
+	fourth := rand.Intn(len)
 
 	output := []string{symbols[first], symbols[second], symbols[third], symbols[fourth]}
 

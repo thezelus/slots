@@ -11,7 +11,6 @@ go get github.com/thezelus/slots
 $ slots
 ```
 
-##Output
 
 ![Jackpot](https://github.com/thezelus/slots/blob/master/images/jackpot.png)
 
@@ -26,6 +25,16 @@ $ slots
 
 
 ![Next time](https://github.com/thezelus/slots/blob/master/images/nextTime.png)
+
+
+Number of spins can passed as an argument. For example the command will print results for 10 spins.
+
+```
+$ slots 10
+```
+
+
+![Multiple spins](https://github.com/thezelus/slots/blob/master/images/multiSpins.png)
 
 
 
