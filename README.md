@@ -13,19 +13,19 @@ $ slots
 
 ##Output
 
-![Jackpot](https://www.github.com/thezelus/slots/images/jackpot.png)
+![Jackpot](https://www.github.com/thezelus/slots/blob/master/images/jackpot.png)
 
 
-![Double Trouble](https://www.github.com/thezelus/slots/images/doubleTrouble.png)
+![Double Trouble](https://www.github.com/thezelus/slots/blob/master/images/doubleTrouble.png)
 
 
-![Alternate Reality](https://www.github.com/thezelus/slots/images/alternateReality.png)
+![Alternate Reality](https://github.com/thezelus/slots/blob/master/images/alternateReality.png)
 
 
-![Sharp Edges](https://www.github.com/thezelus/slots/images/sharpEdges.png)
+![Sharp Edges](https://www.github.com/thezelus/slots/blob/master/images/sharpEdges.png)
 
 
-![Next time](https://www.github.com/thezelus/slots/images/nextTime.png)
+![Next time](https://www.github.com/thezelus/slots/blob/master/images/nextTime.png)
 
 
 
