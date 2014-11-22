@@ -27,7 +27,7 @@ $ slots
 ![Next time](https://github.com/thezelus/slots/blob/master/images/nextTime.png)
 
 
-Number of spins can passed as an argument. For example the command will print results for 10 spins.
+Number of spins be can passed as an argument. For example the command will print results for 10 spins.
 
 ```
 $ slots 10
